@@ -1,13 +1,36 @@
-html, body {
+html,
+body {
     height: 100%;
 }
+
 .parent {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     display: table;
-    text-align: center;
+    text-align: center; */
 }
-.parent > .child {
-    display: table-cell;
-    vertical-align: middle;
+
+.parent>.child {
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+}
+
+.col-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pgRow {
+    display: flex;
+    /* make the row a flex container */
+    align-items: center;
+    /* vertically center each flex item in the container */
+}
+
+.ouf {
+    height: 300px;
 }
